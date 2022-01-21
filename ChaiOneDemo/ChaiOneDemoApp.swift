@@ -9,9 +9,15 @@ import SwiftUI
 
 @main
 struct ChaiOneDemoApp: App {
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            AircraftsView(viewModel: makeViewModel())
         }
+    }
+    
+    func makeViewModel() -> AircraftsViewModel {
+        let loader = AircraftsLoader()
+        return AircraftsViewModel(loader: loader)
     }
 }

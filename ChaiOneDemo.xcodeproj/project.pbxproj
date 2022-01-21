@@ -8,17 +8,28 @@
 
 /* Begin PBXBuildFile section */
 		35D1EE86279B1BB900C79291 /* ChaiOneDemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35D1EE85279B1BB900C79291 /* ChaiOneDemoApp.swift */; };
-		35D1EE88279B1BB900C79291 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35D1EE87279B1BB900C79291 /* ContentView.swift */; };
+		35D1EE88279B1BB900C79291 /* AircraftsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35D1EE87279B1BB900C79291 /* AircraftsView.swift */; };
 		35D1EE8A279B1BBC00C79291 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 35D1EE89279B1BBC00C79291 /* Assets.xcassets */; };
 		35D1EE8D279B1BBC00C79291 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 35D1EE8C279B1BBC00C79291 /* Preview Assets.xcassets */; };
+		35D1EE96279B1CB600C79291 /* Aircraft.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35D1EE95279B1CB600C79291 /* Aircraft.swift */; };
+		35D1EE98279B1D0E00C79291 /* AircraftsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35D1EE97279B1D0E00C79291 /* AircraftsViewModel.swift */; };
+		35D1EE9A279B1D6F00C79291 /* AircraftsLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35D1EE99279B1D6F00C79291 /* AircraftsLoader.swift */; };
+		35D1EE9C279B21B800C79291 /* NetworkingLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35D1EE9B279B21B800C79291 /* NetworkingLoader.swift */; };
+		35D1EE9E279B259E00C79291 /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35D1EE9D279B259E00C79291 /* APIError.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		35D1EE82279B1BB900C79291 /* ChaiOneDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChaiOneDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		35D1EE85279B1BB900C79291 /* ChaiOneDemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChaiOneDemoApp.swift; sourceTree = "<group>"; };
-		35D1EE87279B1BB900C79291 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		35D1EE87279B1BB900C79291 /* AircraftsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AircraftsView.swift; sourceTree = "<group>"; };
 		35D1EE89279B1BBC00C79291 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		35D1EE8C279B1BBC00C79291 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		35D1EE95279B1CB600C79291 /* Aircraft.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Aircraft.swift; sourceTree = "<group>"; };
+		35D1EE97279B1D0E00C79291 /* AircraftsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AircraftsViewModel.swift; sourceTree = "<group>"; };
+		35D1EE99279B1D6F00C79291 /* AircraftsLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AircraftsLoader.swift; sourceTree = "<group>"; };
+		35D1EE9B279B21B800C79291 /* NetworkingLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingLoader.swift; sourceTree = "<group>"; };
+		35D1EE9D279B259E00C79291 /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
+		35D1EE9F279B2DC400C79291 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +62,12 @@
 		35D1EE84279B1BB900C79291 /* ChaiOneDemo */ = {
 			isa = PBXGroup;
 			children = (
+				35D1EEA1279B303B00C79291 /* ViewModels */,
+				35D1EEA0279B302100C79291 /* Networking */,
+				35D1EE94279B1CAC00C79291 /* Models */,
+				35D1EE93279B1CA600C79291 /* Views */,
 				35D1EE85279B1BB900C79291 /* ChaiOneDemoApp.swift */,
-				35D1EE87279B1BB900C79291 /* ContentView.swift */,
+				35D1EE9F279B2DC400C79291 /* Info.plist */,
 				35D1EE89279B1BBC00C79291 /* Assets.xcassets */,
 				35D1EE8B279B1BBC00C79291 /* Preview Content */,
 			);
@@ -65,6 +80,40 @@
 				35D1EE8C279B1BBC00C79291 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		35D1EE93279B1CA600C79291 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				35D1EE87279B1BB900C79291 /* AircraftsView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		35D1EE94279B1CAC00C79291 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				35D1EE95279B1CB600C79291 /* Aircraft.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		35D1EEA0279B302100C79291 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				35D1EE99279B1D6F00C79291 /* AircraftsLoader.swift */,
+				35D1EE9B279B21B800C79291 /* NetworkingLoader.swift */,
+				35D1EE9D279B259E00C79291 /* APIError.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		35D1EEA1279B303B00C79291 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				35D1EE97279B1D0E00C79291 /* AircraftsViewModel.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +186,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				35D1EE88279B1BB900C79291 /* ContentView.swift in Sources */,
+				35D1EE88279B1BB900C79291 /* AircraftsView.swift in Sources */,
 				35D1EE86279B1BB900C79291 /* ChaiOneDemoApp.swift in Sources */,
+				35D1EE9C279B21B800C79291 /* NetworkingLoader.swift in Sources */,
+				35D1EE98279B1D0E00C79291 /* AircraftsViewModel.swift in Sources */,
+				35D1EE96279B1CB600C79291 /* Aircraft.swift in Sources */,
+				35D1EE9A279B1D6F00C79291 /* AircraftsLoader.swift in Sources */,
+				35D1EE9E279B259E00C79291 /* APIError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -271,6 +325,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"ChaiOneDemo/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ChaiOneDemo/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -299,6 +354,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"ChaiOneDemo/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ChaiOneDemo/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
