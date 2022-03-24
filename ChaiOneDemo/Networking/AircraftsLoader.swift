@@ -18,3 +18,13 @@ struct AircraftsLoader: NetworkingLoader {
         return load(url: url)
     }
 }
+dsfgsgsg
+dgdf
+gd
+fg
+fdsg
+fdg
+fds
+gsdf
+gd
+
